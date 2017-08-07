@@ -1,0 +1,4 @@
+git add -A
+git commit -m "Segundo commit"
+git remote add origin https://github.com/HedleyPty/medicos-epi.git
+git push -u origin master
