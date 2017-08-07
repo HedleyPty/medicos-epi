@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block contenido %}
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Les saluda: Hedley Quintana</h1>
+
+        <p>Me llamo Hedley Quintana.</p>
+	<p>Soy un médico, estudiante de doctorado y aficionado de la tecnologia.</br>Les presento mi hoja de vida completa <a href="{% url 'cv' %}" class="btn btn-primary btn-lg">Aqui &gt; &gt;</a></p>
+    	<p><a href="{% url 'home' %}" class="btn btn-primary btn-lg" >Regresar &gt;&gt;</a></p>
+        <p>Estoy trabajando para ofrecerles los mejores recursos para aprender diversos idiomas de manera amena mediante el uso de Ren'py, el cual es un gestor de novelas gráficas basado en Python</p>
+        <div class="container">
+            <div class="col-md-3">
+			<img class="img-responsive" width="220" height="250"
+			src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Ren%E2%80%99Py_Logo_6-13-6_200x307px.png"
+			alt="Logo de Ren'py, Tomado de la wikipedia desde: https://upload.wikimedia.org/wikipedia/commons/7/7e/Ren%E2%80%99Py_Logo_6-13-6_200x307px.png"/>
+			<h3>Logo de Ren'py</h3>
+			</div>
+			<div class="col-md-3">
+
+			<img class="img-responsive " width="220" height="250"
+			src="https://scontent-ams3-1.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/994171_10151639926170318_1273084530_n.jpg?oh=61a9fe8d75cb1832b72f9d84b879d255&oe=57BB97C9"
+            alt="Foto de Hedley, tomada de Facebook"/>
+            <h3>Esta es mi foto</h3></div>
+            <div class='col-md-3'>
+			<img class="img-responsive " width="220" height="250"
+			src="https://www.python.org/static/community_logos/python-logo-inkscape.svg"
+			alt"Logo de Python, Tomado de la página oficial de Python SVG: https://www.python.org/static/community_logos/python-logo-inkscape.svg"/>
+			<h3>Logo de Python</h3></div>
+<!--/p--><div class="col-md-3">
+
+        <iframe  src="https://www.youtube.com/embed/p5G0Ls4hK8k?list=PLe7yIVz6GsAF-G_Qq5-lPsrCUG4uykPbL" frameborder="0" allowfullscreen></iframe>
+        <h3>Abajo les dejo un tutorial de como funciona Ren'py (está en idioma inglés)</h3></div> </div>
+    </div> <!-- /container "-width="560" height="315"-->
+
+{% endblock %}

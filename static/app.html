@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block contenido %}
+<div class="row">
+
+<div class="jumbotron col-sm-4 col-sm-offset-4">
+    {% if  app.nombre == "C plus plus" %}
+	            <h1> C++ </h1>
+	            {% else %}
+          <h1> {{app.nombre}} </h1>
+          {% endif  %}
+
+
+          <image class="img-responsive" src="{{app.logo}}" height="200" width="200" />
+
+
+
+
+             {% if not "Hedley" in app.documentacion  %}
+                {% if app.nombre == "Detectives Médicos" %}
+                <h4>Vease documentación oficial en el repositorio GitHub abajo</h4>
+                {% else %}
+	    	<h4><a href="{{ app.documentacion }}">Documentación oficial de la página web de {{app.nombre}}</a></h4>
+
+             <p> {{app.descripcion}} </p>
+            <ul class="list-group">
+            {% if app.repos and not "Hedley" in app.documentacion %}
+
+
+
+            {% endif  %}
+            {% if app.app != "URL del app" %}
+            <li class="list-group-item"><a href="{{app.app}}" >URL del repositorio con el programa para Windows, Mac OS y Linux</a></li>
+            {% endif %}
+            {% if app.app_Android != "URL del app 3" %}
+            <li class="list-group-item"><a href="{{app.app_Android}}" >URL del repositorio con el programa para Android</a></li>
+            {% endif %}
+            </ul>
+            {% endif %}
+            <li class="list-group-item"><a href="{{app.repos}}"> Repositorio GitHub del desarrollo de la aplicación para aprender {{app.nombre}}</a></li>
+            {% else %}
+
+            <h1 style="color:black;">App no disponible</h1>
+            {% endif %}
+
+
+</div>
+</div>
+
+{% endblock %}

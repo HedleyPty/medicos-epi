@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block contents %}
+<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <div id="navbar" class="navbar-collapse collapse">
+          <a class="navbar-brand" href="http://hedley.pythonanywhere.com/cv_en/">In English</a>
+          <!--a class="navbar-brand" href="#">Contacto</a>
+          <a class="navbar-brand" href="{% url 'acerca' %}">Acerca de mí</a-->
+          <div/>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+<br/>
+<br/>
+<br/>
+<br/>
+<article>
+<div class="jumbotron">
+    <h1>Hoja de vida</br>Hedley Knewjen Quintana: MD MSc, candidato PhD </h1>
+
+    <div class='row'>
+        <div class="col-sm-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class"panel-title"><h2>Información vital</h2>
+                    </div>
+                </div>
+                <div class="panel-body" style="color:black;">
+                    <ul class="list-group">
+                        <li class="list-group-item"><b>Nombre:</b> Hedley Knewjen Quintana</li>
+                        <li class="list-group-item"><b>Fecha de nacimiento:</b> 13 de julio de 1978</li>
+                        <li class="list-group-item"><b>Lugar de nacimiento:</b> Ciudad de Panamá, Panamá</li>
+                        <li class="list-group-item"><b>Foto:</b></br>    <img class="img-responsive " width="220" height="250"
+			                src="https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/994171_10151639926170318_1273084530_n.jpg?oh=82ca1a9adf90b18bcbd0e498bf2c6c85&oe=591F8CC9"
+                            alt="Foto de Hedley, tomada de Facebook"/> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class"panel-title"><h2>Educación</h2></div></div>
+            <div class="panel-body" style="color:black;">
+                <ul class="list-group">
+                <li class="list-group-item"><b>Escuela secundaria:</b></br> Instituto Fermín Naudeau, 1995</li>
+                <li class="list-group-item"><b>Universidad:</b></br> Doctor en medicina,</br>Universidad de Panamá, 2002</li>
+<li class="list-group-item"><b>Universidad:</b></br> Master en biología molecular,</br>Södertörns Högskola, 2010</li>
+<li class="list-group-item"><b>Universidad:</b></br> Doctorado en epidemiología,</br>Instituto Karolinska, 2017 (programado para primavera)</li>
+<li class="list-group-item"><b>MOOC:</br> MiríadaX,</b></br><a href="https://backpack.openbadges.org/share/e1b963c9f9288bb2440d3af34d94745e/">Colección de open badges</a></li>
+                <li class="list-group-item"><b>MOOC:</br> Coursera,</b></br><a href="https://www.coursera.org/user/i/f486f5f728b66fc468b8f6ac84a84d5a">Mi perfil de Coursera</a></li>
+
+
+                </ul></div>
+
+            </div></div>
+        <div class="col-sm-3">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class"panel-title"><h2>Experiencia laboral</h2></div></div>
+            <div class="panel-body" style="color:black;">
+                <ul class="list-group">
+                <li class="list-group-item"><b>Médico de atención primaria:</b></br>Clínica Navarro & Arango, 2007-2008</li>
+                <li class="list-group-item"><b>Oficial médico:</b></br>Royal Caribbean -Navigator of the Seas-</br>(Estados Unidos), 2008</li>
+                <li class="list-group-item"><b>Médico de atención primaria:</b></br>Clínica Navarro & Arango, 2009</li>
+
+                </ul></div></div></div>
+           <div class="col-sm-3">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class"panel-title"><h2>
+                Publicaciones</h2></div></div>
+            <div class="panel-body" style="color:black;">
+                <ul class="list-group">
+                <li class="list-group-item"><b>Projecto: Fatalidad del infarto al miocardio</b></li>
+                <li class="list-group-item"><a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0132601">Agreement between Myocardial Infarction Patients and Their Spouses on Reporting of Data on 82 Cardiovascular Risk Exposures</a></br>2015</li>
+                <li class="list-group-item"><a href="http://www.ijcme-journal.com/article/S2214-7624(16)30015-9/abstract">Diabetes, hypertension, overweight and hyperlipidemia and 7-day case-fatality in first myocardial infarction</a></br>2016</li>
+
+                </ul></div></div></div>
+                </div>
+
+                <div class="row">
+                <div class="col-sm-3">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class"panel-title"><h2>
+                Enlaces</h2></div></div>
+            <div class="panel-body" style="color:black;">
+                <ul class="list-group">
+
+                <li class="list-group-item"><a href="http://ki.se/people/hequin">Mi página en el Instituto Karolinska</a></li>
+                <li class="list-group-item"><a href="github.com/HedleyPty/">Github</a></li>
+                <li class="list-group-item"><a href="https://www.researchgate.net/profile/Hedley_Quintana">ResearchGate</a></li>
+                <li class="list-group-item"><a href="https://se.linkedin.com/in/hedley-quintana-md-171b1663">Linkedin</a></br></li>
+                <li class="list-group-item"><a href="https://twitter.com/hedleyquintana">Twitter</a></br></li>
+                <li class="list-group-item"><a href="https://www.facebook.com/hedleyq">Facebook</a></br></li>
+
+
+
+                </ul></div>
+</div></div>
+
+<div class="col-sm-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class"panel-title"><h2>Idiomas de programación</h2>
+                    </div>
+                </div>
+                <div class="panel-body" style="color:black;">
+                    <ul class="list-group">
+                        <li class="list-group-item">Python</li>
+                        <li class="list-group-item">Java</li>
+                        <li class="list-group-item">C++</li>
+                        <li class="list-group-item">R</li>
+                        <li class="list-group-item">Lua</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+</article>
+{% endblock %}
